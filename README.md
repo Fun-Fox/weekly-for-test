@@ -5,5 +5,4 @@
 ## 订阅方式
 
 - [首发地网站:weelky.fun.icu](https://weelky.fun.icu/)  
-- [RSS订阅](https://weelky.fun.icu/rss.xml)  
 
