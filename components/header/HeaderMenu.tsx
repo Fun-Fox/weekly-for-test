@@ -11,13 +11,13 @@ const HeaderMenu = () => {
     <>
       <Link
         href="/"
-        title="周刊"
-        className={cn("link-default", pathname === "/" ? "link-underline" : "")}
+        title="Weekly"
+        className={cn(pathname === "/" ? "link-underline" : "", "text-black", "text-lg")}
       >
-        周刊
-      </Link>
-      <div className="hidden md:block text-gray-600">|</div>
-      <Link
+        Weekly
+      </Link >
+      {/* <div className="hidden md:block text-gray-600">|</div> */}
+      {/* <Link
         href="/blogs"
         title="博客"
         className={cn(
@@ -26,21 +26,21 @@ const HeaderMenu = () => {
         )}
       >
         博客
-      </Link>
-      <div className="hidden md:block text-gray-600">|</div>
-      <Link href="/rss.xml" title="RSS" className="link-default">
+      </Link> */}
+      {/* <div className="hidden md:block text-gray-600">-</div>
+      <Link href="/rss.xml" title="RSS" className=" text-black text-lg">
         RSS
-      </Link>
-      <div className="hidden md:block text-gray-600">|</div>
+      </Link> */}
+      <div className="hidden md:block text-gray-600">&</div>
       <Link
         // href="https://noteforms.com/forms/bvjqwl"
-        href="https://quail.ink/gapismoney"
-        title="邮件订阅"
-        className="link-default"
+        href="https://www.funfox.icu"
+        title="Blog"
+        className="text-lg text-black"
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
-        邮件订阅
+        Blog
       </Link>
     </>
   );

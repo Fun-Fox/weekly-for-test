@@ -1,5 +1,4 @@
 "use client";
-import HeaderLinks from "@/components/header/HeaderLinks";
 import HeaderMenu from "@/components/header/HeaderMenu";
 import LogoLink from "@/components/header/LogoLink";
 import { MenuIcon } from "lucide-react";
@@ -12,18 +11,18 @@ const Header = () => {
   return (
     <header className="flex z-40 w-full h-auto py-2 px-2 items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70">
       <nav className="z-40 flex px-0 md:px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[1024px]">
-        <div className="flex items-center md:gap-x-12">
+        <div className="flex items-center md:gap-x-1 h-10">
           <LogoLink />
         </div>
 
-        <div className="hidden md:flex items-center gap-4 ml-4 h-12 w-full max-w-fit rounded-full bg-content2 px-4 dark:bg-content1">
+        <div className="hidden md:flex items-center gap-10 ml-5 h-12 w-full max-w-fit rounded-full px-20 ">
           <HeaderMenu />
         </div>
 
-        <div className="hidden md:flex items-center h-12 w-full max-w-fit rounded-full px-2 bg-content1">
-          {/* <SearchBar /> */}
-          <HeaderLinks />
-        </div>
+        {/* <div className="hidden md:flex items-center h-12 w-full max-w-fit rounded-full px-2 bg-content1"> */}
+        {/* <SearchBar /> */}
+        {/* <HeaderLinks />
+        </div> */}
 
         <div className="md:hidden">
           <button
@@ -56,9 +55,9 @@ const Header = () => {
                   <HeaderMenu />
                 </div>
                 {/* <SearchBar /> */}
-                <div className="flex items-center gap-x-5 justify-between">
+                {/* <div className="flex items-center gap-x-5 justify-between">
                   <HeaderLinks />
-                </div>
+                </div> */}
               </div>
             </div>
           )}

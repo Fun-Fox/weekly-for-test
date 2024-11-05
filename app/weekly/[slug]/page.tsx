@@ -140,7 +140,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
             <Link href="/rss.xml" className="link-underline" title="RSS">
               RSS
             </Link>
-            <Link
+            {/* <Link
               href="https://x.com/weijunext/"
               target="_blank"
               rel="noopener noreferrer nofollow"
@@ -148,7 +148,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
               title="Twitter/X"
             >
               Twitter/X
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="mt-16">

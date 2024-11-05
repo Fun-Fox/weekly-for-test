@@ -11,12 +11,12 @@ const LogoLink = () => {
     >
       <Image
         alt={siteConfig.name}
-        src="/logo.svg"
+        src="/logo.png"
         className="w-8 h-8"
         width={24}
         height={24}
       />
-      <span className="text-gray-100">{siteConfig.name}</span>
+      <span className="text-black-500 p-4 text-lg"> {siteConfig.name} </span>
     </Link>
   );
 };

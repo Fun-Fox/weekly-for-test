@@ -98,16 +98,13 @@ export default function Footer() {
     <footer className="flex w-full flex-col border-t border-gray-600">
       <div className="px-6 py-8 mt-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 md:pr-8 mt-6">
-            <div className="flex items-center justify-start">
-              <h1 className="text-medium font-medium">{siteConfig.name}</h1>
-            </div>
-            <span className="text-small text-default-500">
+          <div className="space-y-4 md:pr-4 mt-3">
+            {/* <span className="text-small text-default-200">
               {siteConfig.description}
-            </span>
+            </span> */}
             <FooterLinks />
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-8 xl:col-span-2">
+          {/* <div className="mt-6 grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 {renderList({
@@ -136,7 +133,7 @@ export default function Footer() {
                 })}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <Divider className="my-8" />
         <div className="flex space-x-2">

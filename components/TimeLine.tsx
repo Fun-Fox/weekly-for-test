@@ -15,8 +15,8 @@ export default async function TimeLine({
     >
       <div className="p-4">
         <h4 className="mb-4 text-sm font-medium leading-none">
-          <Link href="/" title="时间线">
-            时间线
+          <Link href="/" title="timeline">
+            TimeLine
           </Link>
         </h4>
         {Object.keys(postsByMonth).map((month) => (

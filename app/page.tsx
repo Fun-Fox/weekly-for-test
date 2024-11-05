@@ -1,4 +1,4 @@
-import DeveloperCard from "@/components/DeveloperCard";
+// import DeveloperCard from "@/components/DeveloperCard";
 import SiteCard from "@/components/SiteCard";
 import TimeLine from "@/components/TimeLine";
 import WeeklyList from "@/components/WeeklyList";
@@ -18,7 +18,7 @@ export default async function Home() {
       <div className="w-full md:w-3/5 px-6">
         <SiteCard />
         <WeeklyList posts={posts} sectionType="weekly" />
-        <DeveloperCard />
+        {/* <DeveloperCard /> */}
       </div>
       <div className="hidden md:flex justify-end md:w-1/5 pr-6 text-right">
         <TimeLine postsByMonth={postsByMonth}></TimeLine>
