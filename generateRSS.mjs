@@ -12,7 +12,7 @@ dotenv.config({ path: "./.env" });
 const SITE_URL = "https://weekly.funfox.icu/";
 const SITE_NAME = "Fun Weekly";
 const SITE_DESCRIPTION = "Focus on the latest news from the world of software testing. We provide a weekly newsletter to";
-const AUTHOR_NAME = process.env.NEXT_PUBLIC_AUTHOR_NAME;
+const AUTHOR_NAME = "FunFox";
 // const TWITTER_USERNAME = process.env.NEXT_PUBLIC_TWITTER_USERNAME;
 
 const markdownToHtml = (markdown) =>
