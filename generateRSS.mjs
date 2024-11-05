@@ -9,11 +9,11 @@ import gemoji from "remark-gemoji";
 import html from "remark-html";
 dotenv.config({ path: "./.env" });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
-const SITE_DESCRIPTION = process.env.NEXT_PUBLIC_SITE_DESCRIPTION;
+const SITE_URL = "https://weekly.funfox.icu/";
+const SITE_NAME = "Fun Weekly";
+const SITE_DESCRIPTION = "Focus on the latest news from the world of software testing. We provide a weekly newsletter to";
 const AUTHOR_NAME = process.env.NEXT_PUBLIC_AUTHOR_NAME;
-const TWITTER_USERNAME = process.env.NEXT_PUBLIC_TWITTER_USERNAME;
+// const TWITTER_USERNAME = process.env.NEXT_PUBLIC_TWITTER_USERNAME;
 
 const markdownToHtml = (markdown) =>
   remark().use(html).use(gemoji).processSync(markdown).toString();
@@ -21,7 +21,7 @@ const markdownToHtml = (markdown) =>
 const generateRssFeed = async () => {
   const author = {
     name: AUTHOR_NAME,
-    link: `https://x.com/${TWITTER_USERNAME}`,
+    link: "https://juejin.cn/user/165374705019225",
   };
   const { posts } = await getWeeklyPosts();
 
@@ -29,7 +29,7 @@ const generateRssFeed = async () => {
   const feed = new Feed({
     title: "Fun Weekly",
     // description: SITE_DESCRIPTION,
-    description: "Focus on the latest news from the world of software testing. We provide a weekly newsletter to",
+    description: `${SITE_DESCRIPTION}`,
     id: SITE_URL,
     link: SITE_URL,
     generator: SITE_URL,
