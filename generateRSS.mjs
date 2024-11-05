@@ -27,9 +27,9 @@ const generateRssFeed = async () => {
 
   const latestPosts = posts.slice(0, 12).filter((i) => i);
   const feed = new Feed({
-    title: SITE_NAME,
+    title: "Fun Weekly",
     // description: SITE_DESCRIPTION,
-    description: `${SITE_DESCRIPTION} feedId:41486365723425792+userId:65433528561428480`,
+    description: "Focus on the latest news from the world of software testing. We provide a weekly newsletter to",
     id: SITE_URL,
     link: SITE_URL,
     generator: SITE_URL,
