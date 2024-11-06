@@ -12,7 +12,7 @@ const HeaderMenu = () => {
       <Link
         href="/"
         title="Weekly"
-        className={cn(pathname === "/" ? "link-underline" : "", "text-black", "text-lg")}
+        className={cn(pathname === "/" ? "underline" : "", "text-lg")}
       >
         Weekly
       </Link >
