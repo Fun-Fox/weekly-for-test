@@ -12,7 +12,7 @@ export function Aside({
   children,
   icon,
   type = "default",
-  showSponsor = 1,
+  showSponsor = 0,
   ...props
 }: AsideProps) {
   return (

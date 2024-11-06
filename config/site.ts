@@ -10,7 +10,7 @@ const AUTHOR_NAME = process.env.NEXT_PUBLIC_AUTHOR_NAME;
 
 const baseSiteConfig = {
   name: SITE_NAME || ' Danceing Around Software Testing',
-  description: SITE_DESCRIPTION || 'Focus on the latest news from the world of software testing. We provide a weekly newsletter to ，获取海外软件测试行业每周快讯。',
+  description: SITE_DESCRIPTION || 'Focus on the latest news from the world of software testing. We provide a weekly newsletter to —— 获取海外软件测试行业每周快讯。',
   url: SITE_URL || 'https://weekly.funfox.icu',
   metadataBase: '/',
   keywords: ["软件测试", "Testing", "软件测试", "周刊", "聚焦海外-软件测试周刊"],
