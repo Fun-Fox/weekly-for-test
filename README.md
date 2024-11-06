@@ -4,5 +4,5 @@
 
 ## 订阅方式
 
-- [首发地网站:weekly.fun.icu](https://weekly.fun.icu/)  
+- [首发地网站:weekly.funfox.icu](https://weekly.funfox.icu/)  
 
