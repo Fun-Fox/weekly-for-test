@@ -9,7 +9,7 @@ const AUTHOR_NAME = process.env.NEXT_PUBLIC_AUTHOR_NAME;
 // const TWITTER_USERNAME = process.env.NEXT_PUBLIC_TWITTER_USERNAME;
 
 const baseSiteConfig = {
-  name: SITE_NAME || ' Danceing Around Software Testing',
+  name: SITE_NAME || ' Dancing Around Software Testing',
   description: SITE_DESCRIPTION || 'Focus on the latest news from the world of software testing. We provide a weekly newsletter to —— 获取海外软件测试行业每周快讯。',
   url: SITE_URL || 'https://weekly.funfox.icu',
   metadataBase: '/',
