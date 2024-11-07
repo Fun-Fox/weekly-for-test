@@ -15,18 +15,18 @@ const TOC = () => {
       articleElement.querySelectorAll("h2, h3")
     ).map((heading) => ({
       text: heading.textContent || "",
-      id: heading.id || "",
+      id: heading.textContent || "",
       level: heading.nodeName, // 'H2' or 'H3'
     }));
-
     setHeadings(extractedHeadings);
   }, []);
+
 
   return (
     <>
       <ul className="sticky top-16 right-0 mt-6">
         {headings.map(({ text, id, level }) => (
-          <li key={id} className={`my-2 ${level === "H3" ? "ml-4" : ""}`}>
+          <li key={id} className={`my-2   ${level === "H3" ? "ml-4 text-sm underline text-blue-400" : "text-xl text-blue-500"}`}>
             <Link href={`#${id}`} title={`#${id}`} className="link-hover">
               {text}
             </Link>

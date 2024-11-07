@@ -11,7 +11,13 @@ interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({ level, className, children }) => {
   const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
-  const headingId = children?.toString() ?? "";
+  let headingId = "";
+
+  headingId = children?.toString() ?? "";
+
+  if (React.isValidElement(children)) {
+    headingId = children?.props?.children
+  }
 
   return (
     <HeadingTag id={headingId} className={className}>
@@ -26,7 +32,7 @@ interface MDXComponentsProps {
 
 const MDXComponents: MDXComponentsProps = {
   h1: (props) => (
-    <Heading level={1} className="text-4xl font-bold mt-6 mb-4" {...props} />
+    <Heading level={1} className="text-5xl font-bold mt-6 mb-4" {...props} />
   ),
   h2: (props) => (
     <Heading
@@ -38,7 +44,7 @@ const MDXComponents: MDXComponentsProps = {
   h3: (props) => (
     <Heading
       level={3}
-      className="text-2xl font-semibold mt-6 mb-4"
+      className="text-xl font-semibold mt-6 mb-4"
       {...props}
     />
   ),
@@ -56,10 +62,10 @@ const MDXComponents: MDXComponentsProps = {
     />
   ),
   hr: (props) => <hr className="border-t border-gray-600" {...props} />,
-  p: (props) => <p className="mt-4 mb-4" {...props} />,
+  p: (props) => <p className="mt-4 mb-4 ml-4" {...props} />,
   a: (props) => (
     <a
-      className="underline text-lg text-blue-500 font-bold"
+      className="underline text-blue-500 font-bold"
 
       target="_blank"
       rel="noopener noreferrer nofollow"
@@ -67,8 +73,8 @@ const MDXComponents: MDXComponentsProps = {
       href={`${props.href}?utm_source=gapis.money`}
     />
   ),
-  ul: (props) => <ul className="list-disc pl-5 mt-0 mb-4" {...props} />,
-  ol: (props) => <ol className="list-decimal pl-5 mt-0 mb-4" {...props} />,
+  ul: (props) => <ul className="list-disc pl-5 mt-0 mb-4 " {...props} />,
+  ol: (props) => <ol className="list-decimal pl-5 mt-0 mb-4 ml-4" {...props} />,
   li: (props) => <li className="mb-2" {...props} />,
   code: (props) => (
     <code
