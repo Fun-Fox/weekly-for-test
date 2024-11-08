@@ -42,7 +42,11 @@ const content = `
 
 # 拉取[仓库](https://github.com/Fun-Fox/weekly-for-test.git)
 
-<img src="/wechat.png" width="30%" />
+git clone https://github.com/Fun-Fox/weekly-for-test.git
+
+# 使用[VSCode](https://code.visualstudio.com/)打开weekly-for-test项目
+
+
 
 # 公众号
 
