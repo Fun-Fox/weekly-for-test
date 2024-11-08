@@ -16,22 +16,19 @@ const HeaderMenu = () => {
       >
         Weekly
       </Link >
-      {/* <div className="hidden md:block text-gray-600">|</div> */}
-      {/* <Link
-        href="/blogs"
-        title="博客"
-        className={cn(
-          "link-default",
-          pathname === "/blogs" ? "link-underline" : ""
-        )}
+      <div className="hidden md:block text-gray-600">|</div>
+      <Link
+        href="/guide"
+        title="guide"
+        className="text-black text-lg"
       >
-        博客
-      </Link> */}
-      {/* <div className="hidden md:block text-gray-600">-</div>
-      <Link href="/rss.xml" title="RSS" className=" text-black text-lg">
+        Guide
+      </Link>
+      {/* <div className="hidden md:block text-gray-600">&</div>
+      <Link href="/rss.xml" title="RSS" className="text-black text-lg">
         RSS
       </Link> */}
-      <div className="hidden md:block text-gray-600">&</div>
+      <div className="hidden md:block text-gray-600">|</div>
       <Link
         // href="https://noteforms.com/forms/bvjqwl"
         href="https://www.funfox.icu"

@@ -14,7 +14,7 @@ const options = {
 export async function generateMetadata() {
   return {
     ...siteConfig,
-    title: `赞助 | ${siteConfig.name}`,
+    title: `guide | ${siteConfig.name}`,
   };
 }
 
@@ -24,7 +24,7 @@ export default async function Page() {
       <aside className="hidden md:block md:w-1/5 pl-6 max-h-[90vh] h-full overflow-auto sticky top-6 left-0"></aside>
       <div className="w-full md:w-3/5 px-2 md:px-12">
         <article id={`article`}>
-          <h1>Thanks!⛵️</h1>
+          <h1>投稿指南</h1>
           <MDXRemote
             source={content}
             components={MDXComponents}
@@ -39,5 +39,14 @@ export default async function Page() {
 }
 
 const content = `
-感谢所有帮助过我和赞助过我的朋友！
+
+# 拉取[仓库](https://github.com/Fun-Fox/weekly-for-test.git)
+
+<img src="/wechat.png" width="30%" />
+
+# 公众号
+
+<img src="/gzh.jpg" width="30%" />
+
+
 `;
